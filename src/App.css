@@ -1,12 +1,13 @@
 :root {
   --black: #0d0d0d;
   --red: #ff2d2b;
+
 }
 
 .scoreboard {
-  width: 58%;
+  width: 80%;
   margin: 2rem auto;
-  background-color: #0b5402;
+  background-color: black;
   color: white;
   border-radius: 0.5rem;
   padding: 5rem;
@@ -27,29 +28,30 @@
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
-  border: 3px solid white;
-  border-radius: 0.5rem;
   width: 15rem;
+ padding-bottom: 10%;
 }
 
 .home {
-  background-color: #656565;
+  background-color:black;
+
 }
 
 .away {
-  background-color: #af750a;
+  background-color: black;
 }
 
 .home__name,
 .away__name,
-.down__title,
-.toGo__title,
-.ballOn__title,
-.quarter__title {
+.home__title,
+.home__goal,
+.away__goal,
+.away__title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 2rem;
 }
+
 
 .home__score,
 .away__score {
@@ -77,22 +79,17 @@
   justify-content: space-around;
   place-items: center;
   height: 20rem;
+
 }
 
-.down,
-.toGo,
-.ballOn,
-.quarter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  place-items: center;
-}
 
-.down__value,
-.toGo__value,
-.ballOn__value,
-.quarter__value {
+
+.home__value,
+.home__score,
+.period__value,
+.away__score,
+.away__value ,
+.bh_score{
   font-family: "Ozone";
   font-size: 5rem;
   color: var(--red);
@@ -106,16 +103,38 @@
 }
 
 .buttons {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+
 }
 
 .homeButtons__touchdown,
-.homeButtons__fieldGoal,
+.homeButton_pentalty,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButton_penalty,
+.reset_home,
+.reset_away,
+.period_button,
+.reset_period,
+.rw_penalty,
+.bh_penalty,
+.reset_bh,
+.reset_rw
+ {
   margin: 1rem;
   border-radius: 4px;
+  color:white;
+  background-color: black;
+  flex-direction: column;
 }
+
+
+.reset_period,
+.reset_bh,
+.reset_rw{
+  color: black;
+  flex-direction: column;
+}
+

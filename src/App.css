@@ -52,10 +52,6 @@
   padding: 2rem;
 }
 
-.period{
-  padding-bottom: 20%;
-  height: 30px;
-}
 
 .home__score,
 .away__score {
@@ -86,21 +82,14 @@
 
 }
 
-.penalty_home,
-.away__penalty, 
-.period {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  place-items: center;
-}
 
 
 .home__value,
 .home__score,
 .period__value,
 .away__score,
-.away__value {
+.away__value ,
+.bh_score{
   font-family: "Ozone";
   font-size: 5rem;
   color: var(--red);
@@ -126,7 +115,13 @@
 .awayButtons__touchdown,
 .awayButton_penalty,
 .reset_home,
-.reset_away
+.reset_away,
+.period_button,
+.reset_period,
+.rw_penalty,
+.bh_penalty,
+.reset_bh,
+.reset_rw
  {
   margin: 1rem;
   border-radius: 4px;
@@ -134,3 +129,12 @@
   background-color: black;
   flex-direction: column;
 }
+
+
+.reset_period,
+.reset_bh,
+.reset_rw{
+  color: black;
+  flex-direction: column;
+}
+

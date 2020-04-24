@@ -10,11 +10,12 @@ function App() {
   //first we are going ot be declaring the sates here
   // number one will go to the lions. 
   let [lions, lionsCount] = useState(0);
-  let [blackhawlks , blackhawlsCount] = useState(0);
+
+  
 
   //number two will be going to the tigers.
-  let [tigers, tigersCount] = useState(0);
-  let [redwings , redwingsCount] = useState(0);
+  let [tigers, tigersCount] = useState(0)
+   
 
 
   return (
@@ -48,14 +49,8 @@ function App() {
                 }}
                   >
            Blackhawlks Score
-           </button>
-          
-          <button className="homeButton_pentalty"
-            onClick = {() => {
-              blackhawlsCount(blackhawlks +1);
-                }}
-                  >
-            Blackhawlks Penalty</button>
+           </button> 
+             
 
             <button className="reset_home"
           onClick={() => {
@@ -73,12 +68,8 @@ function App() {
                 }}
                   >
             Red Wings Score</button>
-          <button className="awayButton_penalty"
-            onClick = {() => {
-              redwingsCount(redwings +1);
-                }}
-                 >
-                Red Wings Penalty</button>
+
+
 
                 <button className="reset_away"
           onClick={() => {
@@ -87,8 +78,11 @@ function App() {
         >
           Reset
         </button>
-        </div>
-      </section>
+                 
+      </div>
+
+
+    </section>
     </div>
   );
 }
